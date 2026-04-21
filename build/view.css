@@ -1,0 +1,22 @@
+/*!***************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[4].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[4].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[4].use[3]!./src/style.scss ***!
+  \***************************************************************************************************************************************************************************************************************************************/
+.wp-block-icb-fold-out-reveal {
+  box-sizing: border-box;
+}
+.wp-block-icb-fold-out-reveal * {
+  box-sizing: border-box;
+}
+.wp-block-icb-fold-out-reveal .bBlocksTestPurpose p {
+  padding: 10px;
+  border-radius: 10px;
+}
+.wp-block-icb-fold-out-reveal .icon {
+  font-style: inherit;
+}
+.wp-block-icb-fold-out-reveal img {
+  width: 100%;
+  max-width: 100%;
+}
+
+/*# sourceMappingURL=view.css.map*/

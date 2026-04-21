@@ -1,15 +1,18 @@
 {
   "$schema": "https://schemas.wp.org/trunk/block.json",
   "apiVersion": 3,
-  "name": "b-blocks/test-purpose",
+  "name": "icb/fold-out-reveal",
   "version": "1.0.0",
-  "title": "Test Purpose",
+  "title": "3D Fold Out Reveal",
   "category": "widgets",
-  "description": "Short description of the Test Purpose",
+  "description": "3D Fold Out Reveal is a WordPress plugin that allows you to create 3D fold out reveal effects on your website.",
   "keywords": [
-    "Test Purpose"
+    "3D Fold Out Reveal",
+    "fold",
+    "reveal",
+    "cards"
   ],
-  "textdomain": "b-blocks",
+  "textdomain": "info-cards",
   "attributes": {
     "alignment": {
       "type": "string",

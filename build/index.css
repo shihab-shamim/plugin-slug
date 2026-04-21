@@ -9,12 +9,21 @@
   font-weight: 700;
 }
 
-.wp-block-b-blocks-test-purpose .selectHelp {
+.wp-block-icb-fold-out-reveal .selectHelp {
   color: #616063;
 }
 /*!*********************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[4].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[4].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[4].use[3]!../bpl-tools/Components/style.scss ***!
   \*********************************************************************************************************************************************************************************************************************************************************/
+svg.bPlBlockIcon {
+  fill: #146EF5 !important;
+}
+
+.block-editor-autocompleters__block.is-selected svg.bPlBlockIcon,
+.block-editor-list-view-leaf.is-selected svg.bPlBlockIcon {
+  fill: #fff !important;
+}
+
 .edit-post-visual-editor .editor-styles-wrapper {
   max-width: inherit !important;
 }
@@ -117,7 +126,7 @@
 }
 
 .bPlNowEditing {
-  outline: 2px solid #4527a4;
+  outline: 2px solid #146EF5;
 }
 
 .bPlInspectorInfo {
@@ -129,7 +138,7 @@
 }
 .bPlInspectorInfo .onSale {
   font-size: 16px;
-  color: #007FFF;
+  color: #007fff;
   padding: 5px;
 }
 .bPlInspectorInfo .onSale * {
@@ -144,38 +153,43 @@
   justify-content: space-between;
 }
 .bPlTabPanel .components-tab-panel__tabs button {
-  color: #4527a4;
+  color: #146EF5;
   width: 50%;
   border-bottom: 3px solid rgba(0, 0, 0, 0);
 }
-.bPlTabPanel .components-tab-panel__tabs button:focus {
-  color: #4527a4;
+.bPlTabPanel .components-tab-panel__tabs button:hover, .bPlTabPanel .components-tab-panel__tabs button:focus {
+  color: #146EF5;
   box-shadow: none;
 }
 .bPlTabPanel .components-tab-panel__tabs .activeTab {
-  border-bottom: 3px solid #4527a4;
   font-weight: bold;
-  background-color: rgba(69, 39, 164, 0.15);
+  background-color: rgba(20, 110, 245, 0.15);
+  border-bottom: 3px solid #FF7A00;
 }
 .bPlTabPanel.bPlAutoTab .components-tab-panel__tabs button {
   width: auto;
 }
 .bPlTabPanel.small .components-tab-panel__tabs button, .bPlTabPanel.mini .components-tab-panel__tabs button {
-  height: 30px;
+  height: 30px !important;
   text-transform: capitalize;
   justify-content: center;
   border-bottom: 0px;
-  border: 1px solid #4527a4;
+  border: 1px solid #146EF5;
+  white-space: nowrap;
+}
+.bPlTabPanel.small .components-tab-panel__tabs button:hover, .bPlTabPanel.mini .components-tab-panel__tabs button:hover {
+  background-color: #FF7A00;
+  color: #fff;
 }
 .bPlTabPanel.small .components-tab-panel__tabs button:focus, .bPlTabPanel.mini .components-tab-panel__tabs button:focus {
-  color: #4527a4;
-  background-color: rgba(69, 39, 164, 0.15);
+  color: #146EF5;
+  background-color: rgba(20, 110, 245, 0.15);
 }
 .bPlTabPanel.small .components-tab-panel__tabs .activeTab,
 .bPlTabPanel.small .components-tab-panel__tabs .activeTab:focus, .bPlTabPanel.mini .components-tab-panel__tabs .activeTab,
 .bPlTabPanel.mini .components-tab-panel__tabs .activeTab:focus {
   color: #fff;
-  background-color: #4527a4;
+  background-color: #146EF5;
 }
 .bPlTabPanel.mini .components-tab-panel__tabs button {
   height: 25px;
@@ -207,7 +221,7 @@
   margin-top: -8px;
   border: none;
   box-sizing: border-box;
-  box-shadow: 0 3px 15px 0 rgba(69, 39, 164, 0.5019607843);
+  box-shadow: 0 3px 15px 0 #5495f8;
   border-radius: 5px;
 }
 .bPlDropdownPopover .dashicon {
@@ -219,6 +233,21 @@
   font-size: 13px !important;
   font-weight: 400 !important;
   text-transform: unset !important;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+.bPlPanelBody label .labelPro,
+.bPlDropdownPopover .components-popover__content label .labelPro {
+  margin-left: auto;
+}
+.bPlPanelBody .helpTooltip,
+.bPlDropdownPopover .components-popover__content .helpTooltip {
+  width: 1.5em;
+  max-width: 20px;
+  height: 1.5em;
+  max-height: 20px;
+  cursor: help;
 }
 .bPlPanelBody .components-notice,
 .bPlDropdownPopover .components-popover__content .components-notice {
@@ -257,7 +286,11 @@
   font-size: 11px !important;
   width: 25px !important;
   color: #fff !important;
-  background-color: #4527a4 !important;
+  background-color: #146EF5 !important;
+  height: 100%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
 }
 .bPlPanelBody .components-checkbox-control .components-base-control__field,
 .bPlDropdownPopover .components-popover__content .components-checkbox-control .components-base-control__field {
@@ -266,16 +299,16 @@
 .bPlPanelBody .components-checkbox-control .components-base-control__field .components-checkbox-control__input[type=checkbox],
 .bPlDropdownPopover .components-popover__content .components-checkbox-control .components-base-control__field .components-checkbox-control__input[type=checkbox] {
   border-radius: 4px;
-  border-color: #4527a4;
+  border-color: #146EF5;
 }
 .bPlPanelBody .components-checkbox-control .components-base-control__field .components-checkbox-control__input[type=checkbox]:checked,
 .bPlDropdownPopover .components-popover__content .components-checkbox-control .components-base-control__field .components-checkbox-control__input[type=checkbox]:checked {
-  background-color: #8344c5;
-  border-color: #4527a4;
+  background-color: #FF7A00;
+  border-color: #146EF5;
 }
 .bPlPanelBody .components-checkbox-control .components-base-control__field .components-checkbox-control__input[type=checkbox]:focus,
 .bPlDropdownPopover .components-popover__content .components-checkbox-control .components-base-control__field .components-checkbox-control__input[type=checkbox]:focus {
-  box-shadow: 0 0 0 2px #fff, 0 0 0 3.5px #4527a4;
+  box-shadow: 0 0 0 2px #fff, 0 0 0 3.5px #146EF5;
 }
 .bPlPanelBody .components-checkbox-control .components-base-control__field label,
 .bPlDropdownPopover .components-popover__content .components-checkbox-control .components-base-control__field label {
@@ -287,24 +320,28 @@
 }
 .bPlPanelBody .components-toggle-control label,
 .bPlDropdownPopover .components-popover__content .components-toggle-control label {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 4px;
   margin-bottom: 3px;
 }
 .bPlPanelBody .components-form-toggle .components-form-toggle__track,
 .bPlDropdownPopover .components-popover__content .components-form-toggle .components-form-toggle__track {
-  border: 1px solid #4527a4;
+  border: 1px solid #0749ab;
 }
 .bPlPanelBody .components-form-toggle.is-checked .components-form-toggle__track,
 .bPlDropdownPopover .components-popover__content .components-form-toggle.is-checked .components-form-toggle__track {
-  background-color: #8344c5;
+  background-color: #146EF5;
 }
 .bPlPanelBody .components-form-toggle .components-form-toggle__input:focus + .components-form-toggle__track,
 .bPlDropdownPopover .components-popover__content .components-form-toggle .components-form-toggle__input:focus + .components-form-toggle__track {
-  box-shadow: 0 0 0 2px #fff, 0 0 0 3.5px #4527a4;
+  box-shadow: 0 0 0 2px #fff, 0 0 0 3.5px #05347a;
 }
 .bPlPanelBody .components-form-toggle .components-form-toggle__thumb,
 .bPlDropdownPopover .components-popover__content .components-form-toggle .components-form-toggle__thumb {
-  background-color: #4527a4;
-  border-color: #4527a4;
+  background-color: #146EF5;
+  border-color: #146EF5;
 }
 .bPlPanelBody .components-form-toggle.is-checked .components-form-toggle__thumb,
 .bPlDropdownPopover .components-popover__content .components-form-toggle.is-checked .components-form-toggle__thumb {
@@ -324,7 +361,7 @@
 }
 .bPlPanelBody .components-range-control__wrapper .components-range-control__track,
 .bPlDropdownPopover .components-popover__content .components-range-control__wrapper .components-range-control__track {
-  background-color: #8344c5;
+  background-color: #146EF5;
 }
 .bPlPanelBody .components-range-control__wrapper .css-5p7d2w-ThumbWrapper,
 .bPlPanelBody .components-range-control__wrapper .components-range-control__thumb-wrapper,
@@ -338,12 +375,18 @@
 .bPlPanelBody .components-range-control__wrapper .components-range-control__thumb-wrapper > *,
 .bPlDropdownPopover .components-popover__content .components-range-control__wrapper .css-5p7d2w-ThumbWrapper > *,
 .bPlDropdownPopover .components-popover__content .components-range-control__wrapper .components-range-control__thumb-wrapper > * {
-  background-color: #4527a4;
-  border: 1px solid #4527a4;
+  background-color: #FF7A00;
+  border: 1px solid #FF7A00;
+}
+.bPlPanelBody .components-range-control__wrapper .css-5p7d2w-ThumbWrapper > *::before,
+.bPlPanelBody .components-range-control__wrapper .components-range-control__thumb-wrapper > *::before,
+.bPlDropdownPopover .components-popover__content .components-range-control__wrapper .css-5p7d2w-ThumbWrapper > *::before,
+.bPlDropdownPopover .components-popover__content .components-range-control__wrapper .components-range-control__thumb-wrapper > *::before {
+  background-color: #FF7A00;
 }
 .bPlPanelBody .components-range-control__wrapper .components-range-control__tooltip,
 .bPlDropdownPopover .components-popover__content .components-range-control__wrapper .components-range-control__tooltip {
-  background-color: #4527a4;
+  background-color: #146EF5;
 }
 .bPlPanelBody .components-radio-control__option,
 .bPlDropdownPopover .components-popover__content .components-radio-control__option {
@@ -356,16 +399,16 @@
 }
 .bPlPanelBody .components-radio-control__option .components-radio-control__input[type=radio],
 .bPlDropdownPopover .components-popover__content .components-radio-control__option .components-radio-control__input[type=radio] {
-  border: 1px solid #4527a4;
+  border: 1px solid #146EF5;
 }
 .bPlPanelBody .components-radio-control__option .components-radio-control__input[type=radio]:checked,
 .bPlDropdownPopover .components-popover__content .components-radio-control__option .components-radio-control__input[type=radio]:checked {
-  background-color: #4527a4;
-  border-color: #4527a4;
+  background-color: #146EF5;
+  border-color: #146EF5;
 }
 .bPlPanelBody .components-radio-control__option .components-radio-control__input[type=radio]:focus,
 .bPlDropdownPopover .components-popover__content .components-radio-control__option .components-radio-control__input[type=radio]:focus {
-  box-shadow: 0 0 0 2px #fff, 0 0 0 3.5px #4527a4;
+  box-shadow: 0 0 0 2px #fff, 0 0 0 3.5px #146EF5;
 }
 .bPlPanelBody .components-radio-control__option label,
 .bPlDropdownPopover .components-popover__content .components-radio-control__option label {
@@ -400,37 +443,37 @@
 .bPlPanelBody .components-datetime .components-datetime__time-field select:focus,
 .bPlDropdownPopover .components-popover__content .components-datetime .components-datetime__time-field input:focus,
 .bPlDropdownPopover .components-popover__content .components-datetime .components-datetime__time-field select:focus {
-  border-color: #4527a4;
+  border-color: #146EF5;
   box-shadow: none;
-  outline: 1px solid #8344c5 !important;
+  outline: 1px solid #FF7A00 !important;
 }
 .bPlPanelBody .components-datetime .components-datetime__time-field select:hover,
 .bPlDropdownPopover .components-popover__content .components-datetime .components-datetime__time-field select:hover {
-  color: #4527a4;
+  color: #146EF5;
 }
 .bPlPanelBody .components-datetime .components-button,
 .bPlDropdownPopover .components-popover__content .components-datetime .components-button {
-  color: #4527a4;
-  border: 1px solid #8344c5;
+  color: #146EF5;
+  border: 1px solid #FF7A00;
   box-shadow: none;
   padding: 6px 10.5px;
 }
 .bPlPanelBody .components-datetime .components-button:hover,
 .bPlDropdownPopover .components-popover__content .components-datetime .components-button:hover {
-  color: #4527a4;
+  color: #146EF5;
 }
 .bPlPanelBody .components-datetime .components-button.is-primary,
 .bPlDropdownPopover .components-popover__content .components-datetime .components-button.is-primary {
   color: #fff;
-  background-color: #4527a4;
+  background-color: #146EF5;
 }
 .bPlPanelBody .components-datetime .components-button.is-primary:hover,
 .bPlDropdownPopover .components-popover__content .components-datetime .components-button.is-primary:hover {
-  background-color: #8344c5 !important;
+  background-color: #FF7A00 !important;
 }
 .bPlPanelBody .components-datetime .components-button.is-primary:focus,
 .bPlDropdownPopover .components-popover__content .components-datetime .components-button.is-primary:focus {
-  outline: 1px solid #8344c5 !important;
+  outline: 1px solid #FF7A00 !important;
 }
 .bPlPanelBody .components-datetime .components-datetime__timezone,
 .bPlDropdownPopover .components-popover__content .components-datetime .components-datetime__timezone {
@@ -438,24 +481,24 @@
 }
 .bPlPanelBody .components-datetime .components-datetime__date .DayPickerNavigation_button__horizontalDefault:focus,
 .bPlDropdownPopover .components-popover__content .components-datetime .components-datetime__date .DayPickerNavigation_button__horizontalDefault:focus {
-  border-color: #4527a4;
-  box-shadow: 0 0 0 1px #4527a4;
+  border-color: #146EF5;
+  box-shadow: 0 0 0 1px #146EF5;
 }
 .bPlPanelBody .components-datetime .components-datetime__date .CalendarDay__default:hover,
 .bPlDropdownPopover .components-popover__content .components-datetime .components-datetime__date .CalendarDay__default:hover {
-  background-color: rgba(69, 39, 164, 0.15);
+  background-color: rgba(20, 110, 245, 0.15);
 }
 .bPlPanelBody .components-datetime .components-datetime__date .CalendarDay:focus,
 .bPlDropdownPopover .components-popover__content .components-datetime .components-datetime__date .CalendarDay:focus {
-  box-shadow: inset 0 0 0 2px #4527a4, inset 0 0 0 3px #fff;
+  box-shadow: inset 0 0 0 2px #146EF5, inset 0 0 0 3px #fff;
 }
 .bPlPanelBody .components-datetime .components-datetime__date .CalendarDay__selected,
 .bPlDropdownPopover .components-popover__content .components-datetime .components-datetime__date .CalendarDay__selected {
-  background-color: #4527a4;
+  background-color: #146EF5;
 }
 .bPlPanelBody .components-datetime .components-datetime__date .CalendarDay__selected:hover,
 .bPlDropdownPopover .components-popover__content .components-datetime .components-datetime__date .CalendarDay__selected:hover {
-  background-color: #4527a4;
+  background-color: #146EF5;
 }
 .bPlPanelBody .components-datetime .components-datetime__buttons button,
 .bPlDropdownPopover .components-popover__content .components-datetime .components-datetime__buttons button {
@@ -473,12 +516,22 @@
 .bPlDropdownPopover .components-popover__content .components-unit-control-wrapper label,
 .bPlDropdownPopover .components-popover__content .components-input-control__label,
 .bPlDropdownPopover .components-popover__content .components-number-control label {
-  display: flex;
+  display: flex !important;
   align-items: center;
-  gap: 8px;
+  gap: 6px;
   padding-bottom: 0 !important;
   margin-right: auto;
   margin-bottom: 0;
+}
+.bPlPanelBody .bPlLabel .labelPro,
+.bPlPanelBody .components-unit-control-wrapper label .labelPro,
+.bPlPanelBody .components-input-control__label .labelPro,
+.bPlPanelBody .components-number-control label .labelPro,
+.bPlDropdownPopover .components-popover__content .bPlLabel .labelPro,
+.bPlDropdownPopover .components-popover__content .components-unit-control-wrapper label .labelPro,
+.bPlDropdownPopover .components-popover__content .components-input-control__label .labelPro,
+.bPlDropdownPopover .components-popover__content .components-number-control label .labelPro {
+  margin-left: auto;
 }
 .bPlPanelBody .bPlResetVal,
 .bPlDropdownPopover .components-popover__content .bPlResetVal {
@@ -496,15 +549,22 @@
 .bPlPanelBody .bPlBtnGroup .is-primary,
 .bPlDropdownPopover .components-popover__content .bPlBtnGroup .components-button,
 .bPlDropdownPopover .components-popover__content .bPlBtnGroup .is-primary {
-  border: 1px solid #8344c5;
+  border: 1px solid #05347a;
   box-shadow: none;
   padding: 6px 10.5px;
+}
+.bPlPanelBody .bPlBtnGroup .components-button > span,
+.bPlPanelBody .bPlBtnGroup .is-primary > span,
+.bPlDropdownPopover .components-popover__content .bPlBtnGroup .components-button > span,
+.bPlDropdownPopover .components-popover__content .bPlBtnGroup .is-primary > span {
+  display: flex;
 }
 .bPlPanelBody .bPlBtnGroup .components-button:hover,
 .bPlPanelBody .bPlBtnGroup .is-primary:hover,
 .bPlDropdownPopover .components-popover__content .bPlBtnGroup .components-button:hover,
 .bPlDropdownPopover .components-popover__content .bPlBtnGroup .is-primary:hover {
-  color: #4527a4;
+  color: #fff;
+  background-color: #FF7A00;
 }
 .bPlPanelBody .bPlBtnGroup .components-button .dashicon,
 .bPlPanelBody .bPlBtnGroup .is-primary .dashicon,
@@ -519,18 +579,24 @@
 .bPlDropdownPopover .components-popover__content .bPlBtnGroup .is-primary.has-icon {
   padding: 6px 9px;
 }
+.bPlPanelBody .bPlBtnGroup .components-button.has-icon.is-small,
+.bPlPanelBody .bPlBtnGroup .is-primary.has-icon.is-small,
+.bPlDropdownPopover .components-popover__content .bPlBtnGroup .components-button.has-icon.is-small,
+.bPlDropdownPopover .components-popover__content .bPlBtnGroup .is-primary.has-icon.is-small {
+  padding: 0 4px;
+}
 .bPlPanelBody .bPlBtnGroup .is-primary,
 .bPlDropdownPopover .components-popover__content .bPlBtnGroup .is-primary {
   color: #fff;
-  background-color: #4527a4;
+  background-color: #146EF5;
 }
 .bPlPanelBody .bPlBtnGroup .is-primary:hover,
 .bPlDropdownPopover .components-popover__content .bPlBtnGroup .is-primary:hover {
-  background-color: #8344c5 !important;
+  background-color: #146EF5 !important;
 }
 .bPlPanelBody .bPlBtnGroup .is-primary:focus,
 .bPlDropdownPopover .components-popover__content .bPlBtnGroup .is-primary:focus {
-  outline: 2px solid #8344c5 !important;
+  outline: 2px solid #146EF5 !important;
 }
 .bPlPanelBody .bPlBtnGroup svg,
 .bPlDropdownPopover .components-popover__content .bPlBtnGroup svg {
@@ -546,7 +612,7 @@
 .bPlPanelBody .addItem,
 .bPlDropdownPopover .components-popover__content .addItem {
   text-align: center;
-  background: #4527a4;
+  background: #146EF5;
 }
 .bPlPanelBody .addItem button,
 .bPlDropdownPopover .components-popover__content .addItem button {
@@ -554,6 +620,12 @@
   display: flex;
   justify-content: center;
   color: #fff;
+  background: #146EF5;
+}
+.bPlPanelBody .addItem button:hover,
+.bPlDropdownPopover .components-popover__content .addItem button:hover {
+  color: #fff;
+  background: #146EF5 !important;
 }
 .bPlPanelBody .addItem button:focus,
 .bPlDropdownPopover .components-popover__content .addItem button:focus {
@@ -570,6 +642,7 @@
   height: 18px;
   margin-right: 5px;
   margin-bottom: -5px;
+  color: #fff;
 }
 .bPlPanelBody .itemAction .removeItem,
 .bPlPanelBody .itemAction .duplicateItem,
@@ -601,12 +674,12 @@
 }
 .bPlPanelBody .itemAction .duplicateItem,
 .bPlDropdownPopover .components-popover__content .itemAction .duplicateItem {
-  background-color: #4527a4;
+  background-color: #146EF5;
 }
 .bPlPanelBody.help .helpItem,
 .bPlDropdownPopover .components-popover__content.help .helpItem {
   text-align: center;
-  background: #4527a4;
+  background: #146EF5;
   padding: 12px 0;
 }
 .bPlPanelBody.help .helpItem:not(:first-child),
@@ -649,6 +722,46 @@
   align-items: center;
   justify-content: center;
 }
+
+.bPlPanelBody .components-base-control .components-base-control__field .components-toggle-group-control {
+  border-width: 1px !important;
+  border-color: #146EF5 !important;
+}
+.bPlPanelBody .components-base-control .components-base-control__field .components-toggle-group-control::before {
+  background: #146EF5;
+}
+
+.bPlPanelBody .flex1 {
+  flex: 1;
+}
+.bPlPanelBody .flex2 {
+  flex: 2;
+}
+.bPlPanelBody .flex3 {
+  flex: 3;
+}
+.bPlPanelBody .flex4 {
+  flex: 4;
+}
+.bPlPanelBody .flex5 {
+  flex: 5;
+}
+.bPlPanelBody .flex6 {
+  flex: 6;
+}
+
+.bPlCustomPopoverWrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-top: 10px;
+}
+
+.bPlCustomPopoverChildren {
+  width: 240px;
+  padding: 10px;
+}
 /*!*************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[4].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[4].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[4].use[3]!../bpl-tools/Components/BoxControl/BoxControl.scss ***!
   \*************************************************************************************************************************************************************************************************************************************************************************/
@@ -683,21 +796,169 @@
   font-size: 11px;
   text-transform: capitalize;
 }
-.bPlBoxControl .boxLinkButton {
+.bPlBoxControl .bplBoxControlLinkButton {
   background: transparent;
-  border: none;
-  padding: 0;
-  margin-top: -13px;
+  cursor: pointer;
+  height: 32px;
+  display: grid;
+  align-self: self-start;
+  align-content: center;
+  padding: 0 4px;
+  border: 1px solid #949494;
+  border-left: unset;
+  border-radius: 0 2px 2px 0;
   cursor: pointer;
 }
-.bPlBoxControl .boxLinkButton .dashicons {
+.bPlBoxControl .bplBoxControlLinkButton.activeLink {
+  background-color: #146EF5;
+}
+.bPlBoxControl .bplBoxControlLinkButton.activeLink .dashicons {
+  color: #fff;
+}
+.bPlBoxControl .bplBoxControlLinkButton .dashicons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   font-size: 16px;
 }
-.bPlBoxControl .boxLinkButton .dashicons.dashicons-image-rotate {
+.bPlBoxControl .bplBoxControlLinkButton .dashicons.dashicons-image-rotate {
   color: #666;
 }
-.bPlBoxControl .boxLinkButton .dashicons.dashicons-image-rotate:hover {
+.bPlBoxControl .bplBoxControlLinkButton .dashicons.dashicons-image-rotate:hover {
   color: black;
+}
+/*!*************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[4].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[4].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[4].use[3]!../bpl-tools/Components/BplBlockPreview/style.scss ***!
+  \*************************************************************************************************************************************************************************************************************************************************************************/
+.bPlBlockPreviewWrapper {
+  display: flex;
+  align-items: center;
+}
+.bPlBlockPreviewWrapper .bPl-previewBtn.bPl-activeBtn {
+  color: #fff;
+  background: #146EF5;
+}
+/*!****************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[4].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[4].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[4].use[3]!../bpl-tools/Components/Button/style.scss ***!
+  \****************************************************************************************************************************************************************************************************************************************************************/
+.bPlButton {
+  font-size: 16px;
+  font-weight: 500;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  position: relative;
+  padding: 12px 28px;
+  border: none;
+  border-radius: 0.5em;
+  outline: 0;
+  z-index: 0;
+  cursor: pointer;
+  overflow: hidden;
+  transition: all 0.5s ease-in-out;
+}
+.bPlButton .bPlButton-disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+.bPlButton svg {
+  fill: currentColor;
+  width: 1.2em;
+  height: 1.2em;
+}
+.bPlButton:hover, .bPlButton:focus {
+  outline: 0;
+  box-shadow: none;
+}
+.bPlButton.variant-primary, .bPlButton.variant-secondary, .bPlButton.variant-danger {
+  color: #fff;
+}
+.bPlButton.variant-primary::before, .bPlButton.variant-secondary::before, .bPlButton.variant-danger::before {
+  background: #070127;
+  content: "";
+  width: 0;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: -1;
+  transition: all 0.5s ease-in-out;
+}
+.bPlButton.variant-primary:hover::before, .bPlButton.variant-secondary:hover::before, .bPlButton.variant-danger:hover::before {
+  width: 100%;
+}
+.bPlButton.variant-primary.white::before, .bPlButton.variant-secondary.white::before, .bPlButton.variant-danger.white::before {
+  background: #fff;
+}
+.bPlButton.variant-primary {
+  background: #146EF5;
+}
+.bPlButton.variant-primary.white:hover {
+  color: #146EF5;
+}
+.bPlButton.variant-primary.outline {
+  color: #146EF5;
+  background: transparent;
+  border: 2px solid #146EF5;
+}
+.bPlButton.variant-primary.outline::before {
+  background: #146EF5;
+}
+.bPlButton.variant-primary.outline:hover {
+  color: #fff;
+}
+.bPlButton.variant-primary.outline.white {
+  color: #fff;
+  border: 2px solid #fff;
+}
+.bPlButton.variant-primary.outline.white::before {
+  background: #fff;
+}
+.bPlButton.variant-primary.outline.white:hover {
+  color: #146EF5;
+}
+.bPlButton.variant-secondary {
+  background: #FF7A00;
+}
+.bPlButton.variant-secondary.white:hover {
+  color: #FF7A00;
+}
+.bPlButton.variant-secondary.outline {
+  color: #FF7A00;
+  background: transparent;
+  border: 2px solid #FF7A00;
+}
+.bPlButton.variant-secondary.outline::before {
+  background: #FF7A00;
+}
+.bPlButton.variant-secondary.outline:hover {
+  color: #fff;
+}
+.bPlButton.variant-danger {
+  background: #dc3545;
+}
+.bPlButton.variant-danger.white:hover {
+  color: #FF7A00;
+}
+.bPlButton.variant-danger.outline {
+  color: #dc3545;
+  background: transparent;
+  border: 2px solid #dc3545;
+}
+.bPlButton.variant-danger.outline::before {
+  background: #FF7A00;
+}
+.bPlButton.variant-danger.outline:hover {
+  color: #fff;
+}
+.bPlButton.size-medium {
+  font-size: 14px;
+  padding: 8px 18px;
+}
+.bPlButton.size-small {
+  font-size: 12px;
+  padding: 6px 14px;
 }
 /*!*****************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[4].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[4].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[4].use[3]!../bpl-tools/Components/ColorControl/ColorControl.scss ***!
@@ -741,52 +1002,36 @@
   flex-wrap: wrap;
   gap: 3px;
 }
-/*!********************************************************************************************************************************************************************************************!*\
-  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[2].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[2].use[2]!../bpl-tools/Components/Device/style.css ***!
-  \********************************************************************************************************************************************************************************************/
-/* .single-device {
-	border: 1px solid #ccc;
-	border-radius: 3px;
-	cursor: pointer;
-	height: 22px;
-	width: 22px;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	cursor: pointer;
+/*!****************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[4].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[4].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[4].use[3]!../bpl-tools/Components/Device/style.scss ***!
+  \****************************************************************************************************************************************************************************************************************************************************************/
+.bPlDeviceControl {
+  gap: 5px;
 }
-
-.single-device span.dashicons{
-	font-size: 18px;
-	margin-top: 2px;
-	} */
-.advancedOptionssingle-device {
-	border: 1px solid #ccc;
-	border-radius: 2px;
-	padding: 1px;
-	height: 17px !important;
-	width: 17px !important;
-	display: flex;
-	cursor: pointer;
+.bPlDeviceControl button {
+  border: 1px solid #ccc;
+  border-radius: 2px;
+  padding: 1px;
+  height: 17px !important;
+  width: 17px !important;
+  display: flex;
+  cursor: pointer;
 }
-
-.advancedOptionssingle-device.active {
-	border-color: #4527a4 !important;
+.bPlDeviceControl button .dashicons {
+  font-size: 13px;
 }
-
-.advancedOptionssingle-device>.dashicons.active {
-	color: #4527a4 !important;
+.bPlDeviceControl button.active {
+  border-color: #146EF5;
 }
-
-.advancedOptionssingle-device span.dashicons {
-	font-size: 13px;
+.bPlDeviceControl button.active .dashicons {
+  color: #146EF5;
 }
 /*!*********************************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[4].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[4].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[4].use[3]!../bpl-tools/Components/Gradient/Gradient.scss ***!
   \*********************************************************************************************************************************************************************************************************************************************************************/
 .bplAdvRangeColor .components-base-control.components-range-control .components-base-control__field .components-range-control__root .components-range-control__wrapper .components-range-control__track,
 .bplAdvRangeColor .components-base-control.components-range-control .components-base-control__field .components-range-control__root .components-range-control__wrapper .components-range-control__thumb-wrapper span {
-  background: #4527a4 !important;
+  background: #146EF5 !important;
 }
 /*!***********************************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[4].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[4].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[4].use[3]!../bpl-tools/Components/HelpPanel/HelpPanel.scss ***!
@@ -808,7 +1053,7 @@
   text-align: center;
   display: inline-flex;
   color: #fff;
-  background-color: #4527a4;
+  background-color: #146EF5;
   border-radius: 4px;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
   transition: all 0.3s ease-in-out;
@@ -856,7 +1101,7 @@
   overflow-y: scroll;
   z-index: 99;
   margin: 0;
-  box-shadow: 0 4px 15px 0 rgba(69, 39, 164, 0.5019607843);
+  box-shadow: 0 4px 15px 0 #5495f8;
   border-radius: 8px;
 }
 .bPlIconSelect .bPlIconLists i {
@@ -868,7 +1113,7 @@
   margin: 0;
 }
 .bPlIconSelect .bPlIconLists i:hover {
-  background-color: rgba(69, 39, 164, 0.0588235294);
+  background-color: #85b4fa;
   cursor: pointer;
 }
 .bPlIconSelect .dashicon {
@@ -885,6 +1130,16 @@
 }
 .bPlIconLibrary .panel-icon svg {
   height: 18px;
+}
+.bPlIconLibrary .bPlIconLibrary-removeIconBtn {
+  background: #da5757;
+  color: white;
+  transition: all 0.2s ease-in-out;
+}
+.bPlIconLibrary .bPlIconLibrary-removeIconBtn:hover {
+  opacity: 0.8;
+  background: #da5757 !important;
+  color: white !important;
 }
 .bPlIconLibrary .bPlIconLibraryModalWrapper {
   background: rgba(0, 0, 0, 0.158);
@@ -934,10 +1189,14 @@
   align-items: center;
   gap: 5px;
 }
+.bPlIconLibrary .bPlIconLibraryModalWrapper .bPlIconLibraryModal .bPlIconLibraryHeader .bPlIconLibraryHeaderLogo svg {
+  height: 22px;
+}
 .bPlIconLibrary .bPlIconLibraryModalWrapper .bPlIconLibraryModal .bPlIconLibraryHeader .bPlIconLibraryHeaderLogo h3 {
   font-size: 18px;
   font-weight: 600;
   text-transform: none;
+  white-space: nowrap;
 }
 .bPlIconLibrary .bPlIconLibraryModalWrapper .bPlIconLibraryModal .bPlIconLibraryHeader .bPlIconLibraryHeaderClose {
   border-left: 1px solid #ccc;
@@ -975,7 +1234,7 @@
 }
 .bPlIconLibrary .bPlIconLibraryModalWrapper .bPlIconLibraryModal .bPlIconLibraryBody .bPlIconLibrarySidebar .bPlIconLibrarySidebarMenu li.active {
   background: #efebfa;
-  border-left: 3px solid #4527a4;
+  border-left: 3px solid #146EF5;
   color: #000;
 }
 .bPlIconLibrary .bPlIconLibraryModalWrapper .bPlIconLibraryModal .bPlIconLibraryBody .bPlIconLibraryMain {
@@ -1004,8 +1263,8 @@
 .bPlIconLibrary .bPlIconLibraryModalWrapper .bPlIconLibraryModal .bPlIconLibraryBody .bPlIconLibraryMain .bPlIconLibrarySearch .bPlIconLibrarySearchInput:focus {
   outline: none;
   box-shadow: none;
-  box-shadow: 0px 0px 0px 1px #4527a4;
-  border-color: #4527a4;
+  box-shadow: 0px 0px 0px 1px #146EF5;
+  border-color: #146EF5;
 }
 .bPlIconLibrary .bPlIconLibraryModalWrapper .bPlIconLibraryModal .bPlIconLibraryBody .bPlIconLibraryMain .bPlIconLibrarySearch .bPlIconLibrarySearchIcon {
   position: absolute;
@@ -1031,7 +1290,7 @@
   display: flex;
   align-items: center;
   gap: 2px;
-  background-color: #4527a4;
+  background-color: #146EF5;
   color: #fff;
   text-transform: capitalize;
   font-size: 10px;
@@ -1068,12 +1327,12 @@
   cursor: pointer;
 }
 .bPlIconLibrary .bPlIconLibraryModalWrapper .bPlIconLibraryModal .bPlIconLibraryBody .bPlIconLibraryMain .bPlIconLibraryIconsWrapper .bPlIconLibraryIcons .bPlIconLibraryIcon.isActive {
-  background: #4527a4;
+  background: #146EF5;
   color: #fff;
   fill: #fff;
 }
 .bPlIconLibrary .bPlIconLibraryModalWrapper .bPlIconLibraryModal .bPlIconLibraryBody .bPlIconLibraryMain .bPlIconLibraryIconsWrapper .bPlIconLibraryIcons .bPlIconLibraryIcon.isActive:hover {
-  background: #4527a4;
+  background: #146EF5;
 }
 .bPlIconLibrary .bPlIconLibraryModalWrapper .bPlIconLibraryModal .bPlIconLibraryBody .bPlIconLibraryMain .bPlIconLibraryIconsWrapper .bPlIconLibraryIcons .bPlIconLibraryIcon:hover {
   background: #f3f0ff;
@@ -1099,7 +1358,7 @@
 }
 .bPlIconLibrary .bPlIconLibraryModalWrapper .bPlIconLibraryModal .bPlIconLibraryFooter .bPlIconLibraryFooterInsert {
   all: unset;
-  background: #4527a4;
+  background: #146EF5;
   padding: 6px 12px;
   font-size: 13px;
   color: #fff;
@@ -1139,27 +1398,21 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
 }
-.bPlSortablePanelItem .itemsPanelHeader .panel-header-title p {
+.bPlSortablePanelItem .itemsPanelHeader .panel-header-title .repeater-panel-title {
   cursor: pointer;
   margin: 0px;
   height: 100%;
-  width: 100%;
-  display: flex;
-  align-items: center;
+  width: 125px;
+  display: inline-block;
   padding-left: 5px;
   transition: background-color 0.2s ease-in-out;
-  overflow: hidden;
-}
-.bPlSortablePanelItem .itemsPanelHeader .panel-header-title p div {
+  padding-top: 10px;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
 }
-.bPlSortablePanelItem .itemsPanelHeader .panel-header-title p:hover {
+.bPlSortablePanelItem .itemsPanelHeader .panel-header-title .repeater-panel-title:hover {
   background-color: #ccc;
 }
 .bPlSortablePanelItem .itemsPanelHeader .panel-header-title .itemAction {
@@ -1192,6 +1445,38 @@
 .bPlSortablePanelItem .itemsPanelBody.hidden {
   height: 0;
 }
+/*!*****************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[4].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[4].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[4].use[3]!../bpl-tools/Components/Loading/style.scss ***!
+  \*****************************************************************************************************************************************************************************************************************************************************************/
+.bPlLoading .loadingContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+.bPlLoading .loadingContent.horizontal {
+  flex-direction: row;
+}
+.bPlLoading .loadingContent .loadingSpinner {
+  width: 2rem;
+  height: 2rem;
+  border: 4px solid #146EF5;
+  border-top-color: transparent;
+  border-radius: 50%;
+  animation: bPlLoadingSpin 1s linear infinite;
+}
+.bPlLoading .loadingContent .loadingText {
+  color: #485781;
+  font-size: 18px;
+}
+@keyframes bPlLoadingSpin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
 /*!*****************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[4].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[4].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[4].use[3]!../bpl-tools/Components/MediaControl/MediaControl.scss ***!
   \*****************************************************************************************************************************************************************************************************************************************************************************/
@@ -1202,13 +1487,13 @@
   height: 31px;
   padding: 3px !important;
   color: #fff !important;
-  background-color: #4527a4 !important;
+  background-color: #146EF5 !important;
   border: none !important;
   outline: 0;
 }
 .bPlInlineMediaUpload button:focus {
   outline: 0;
-  box-shadow: 0 0 0 0px #4527a4 !important;
+  box-shadow: 0 0 0 0px #146EF5 !important;
 }
 
 .bPlMediaPlaceholder .components-placeholder__fieldset {
@@ -1216,7 +1501,7 @@
 }
 .bPlMediaPlaceholder button {
   color: #fff !important;
-  background-color: #4527a4 !important;
+  background-color: #146EF5 !important;
 }
 .bPlMediaPlaceholder .components-button {
   width: -moz-fit-content;
@@ -1299,8 +1584,8 @@
   padding: 3px 6px;
 }
 .bPlMediaArea .mediaAreaContainer .mediaImage {
-  -o-object-fit: cover;
-     object-fit: cover;
+  -o-object-fit: unset !important;
+     object-fit: unset !important;
   border: none;
 }
 .bPlMediaArea .mediaAreaContainer:hover .mediaButton {
@@ -1308,6 +1593,12 @@
 }
 .bPlMediaArea .mediaAreaContainer:hover .mediaDelete {
   display: block;
+}
+.bPlMediaArea .bplMediaAreaErrorMessage {
+  font-size: 12px;
+  color: #D93025;
+  line-height: 1.2;
+  margin: 4px 0 0 0 !important;
 }
 /*!*****************************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[4].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[4].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[4].use[3]!../bpl-tools/Components/MultiSelectControl/MultiSelectControl.scss ***!
@@ -1354,8 +1645,7 @@
 }
 .bPlMultiSelect ul.listWrap input[type=search] {
   width: auto;
-  min-width: 70px;
-  max-width: calc(100% - 28px);
+  min-width: 10px;
   height: 20px;
   min-height: 20px;
   font-size: 13px;
@@ -1467,19 +1757,19 @@
   font-weight: 500;
   width: 100%;
   min-height: 44px;
-  background-color: rgba(68, 39, 164, 0.1450980392);
+  background-color: rgba(20, 110, 245, 0.145);
   position: relative;
   padding: 5px 10px;
-  border: 1px solid rgba(68, 39, 165, 0.3137254902);
+  border: 1px solid rgba(20, 110, 245, 0.314);
   border-radius: 4px;
-  box-shadow: 0 2px 4px rgba(68, 39, 165, 0.1450980392);
+  box-shadow: 0 2px 4px rgba(20, 110, 245, 0.145);
   cursor: pointer;
   transition: 0.3s;
 }
 .bplSelectPure .selectSelectedLabel {
   font-size: 14px;
   color: #fff;
-  background-color: #4527a4;
+  background-color: #146EF5;
   display: inline-flex;
   border-radius: 3px;
   padding: 4px 5px;
@@ -1516,13 +1806,13 @@
   display: none;
   width: 100%;
   max-height: 220px;
-  color: #4527a4;
+  color: #146EF5;
   background-color: #fff;
   position: absolute;
   left: 0;
   top: 100% !important;
   border-radius: 4px;
-  box-shadow: 0 4px 15px 0 rgba(69, 39, 164, 0.5019607843);
+  box-shadow: 0 4px 15px 0 #5495f8;
   overflow: hidden;
   overflow-y: scroll;
   z-index: 99;
@@ -1536,31 +1826,178 @@
   background-color: #f9f9f8;
   padding: 5px 10px;
   border: none;
-  border-bottom: 1px solid #4527a4;
+  border-bottom: 1px solid #146EF5;
   border-radius: 0;
   outline: none;
 }
 .bplSelectPure .selectAutocomplete:focus {
-  border-color: #4527a4;
+  border-color: #146EF5;
   box-shadow: none;
 }
 .bplSelectPure .selectOption {
   line-height: 24px;
   height: 44px;
   padding: 10px;
-  border-bottom: 1px solid #4527a4;
+  border-bottom: 1px solid #146EF5;
 }
 .bplSelectPure .selectOptionSelected {
-  color: rgba(69, 39, 164, 0.3137254902);
+  color: #5495f8;
   cursor: initial;
   pointer-events: none;
 }
 .bplSelectPure .selectOptionHidden {
   display: none;
 }
-/*!***********************************************************************************************************************************************************************************************************************!*\
-  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[2].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[2].use[2]!../bpl-tools/Components/SolidBackground/panelCustomColorControl.css ***!
-  \***********************************************************************************************************************************************************************************************************************/
+/*!**************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[4].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[4].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[4].use[3]!../bpl-tools/Components/SelectTokenField/style.scss ***!
+  \**************************************************************************************************************************************************************************************************************************************************************************/
+.bPl-token-field-main-wrapper .bPl-single-token-field-wrapper {
+  width: -moz-fit-content;
+  width: fit-content;
+  position: relative;
+}
+.bPl-token-field-main-wrapper .bPl-single-token-field-wrapper .bPl-token-field-dropdown-wrapper {
+  position: absolute;
+  left: 0;
+  right: 0;
+  background: #fff;
+  padding: 5px 5px;
+  border: 1px solid #b3b3b3;
+  border-top: none;
+  border-radius: 0px 0px 5px 5px;
+  box-shadow: 0px 1px 6px #e5e5e5;
+  overflow-x: hidden;
+  overflow-y: auto;
+  max-height: 240px;
+  z-index: 9999;
+}
+.bPl-token-field-main-wrapper .bPl-single-token-field-wrapper .bPl-token-field-dropdown-wrapper .bPlTools-token-field-dropdown-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.bPl-token-field-main-wrapper .bPl-single-token-field-wrapper .bPl-token-field-dropdown-wrapper .bPlTools-token-field-dropdown-list li {
+  color: #444;
+  cursor: pointer;
+  /* background:linear-gradient(#146EF5 20%, #422c8d 50%, #422c8d 52%, #146EF5 100%); */
+  padding: 5px 5px;
+  margin-bottom: 2px;
+  font-size: 14px;
+}
+.bPl-token-field-main-wrapper .bPl-single-token-field-wrapper .bPl-token-field-dropdown-wrapper .bPlTools-token-field-dropdown-list > li:hover:not(.bPlTools-multipleActiveItem) {
+  color: #fff;
+  background: linear-gradient(#146EF5 20%, #2e6ac3 50%, #336abb 52%, #146EF5 100%) !important;
+}
+.bPl-token-field-main-wrapper .bPl-single-token-field-wrapper .bPl-token-field-dropdown-wrapper .bPlTools-token-field-dropdown-list .activeItemInList {
+  color: #fff;
+  background: linear-gradient(#146EF5 20%, #2e6ac3 50%, #336abb 52%, #146EF5 100%);
+}
+.bPl-token-field-main-wrapper .bPl-single-token-field-wrapper .bPl-token-field-dropdown-wrapper .bPlTools-token-field-dropdown-list .bPlTools-multipleActiveItem {
+  color: #ccc;
+}
+.bPl-token-field-main-wrapper .bPl-single-token-field-wrapper .bPl-single-token-field {
+  width: -moz-fit-content;
+  width: fit-content;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  cursor: pointer;
+  background: linear-gradient(#fff 20%, #f6f6f6 50%, #eee 52%, #f4f4f4 100%);
+  padding: 5px 10px;
+  border-radius: 5px;
+  /* border: 1px solid #e5e5e5; */
+  border: 1px solid #b3b3b3;
+}
+.bPl-token-field-main-wrapper .bPl-single-token-field-wrapper .bPl-single-token-field .bPl-token-field-value {
+  color: #adadad;
+  font-size: 14px;
+}
+.bPl-token-field-main-wrapper .bPl-single-token-field-wrapper .bPl-single-token-field .bPl-xMark-icon,
+.bPl-token-field-main-wrapper .bPl-single-token-field-wrapper .bPl-single-token-field .bPl-arrow-icon {
+  fill: #adadad;
+  transition: all 0.2s ease-in-out;
+  display: flex;
+}
+.bPl-token-field-main-wrapper .bPl-single-token-field-wrapper .bPl-single-token-field .bPl-xMark-icon svg,
+.bPl-token-field-main-wrapper .bPl-single-token-field-wrapper .bPl-single-token-field .bPl-arrow-icon svg {
+  margin: 0;
+}
+.bPl-token-field-main-wrapper .bPl-single-token-field-wrapper .bPl-single-token-field .bPl-xMark-icon:hover,
+.bPl-token-field-main-wrapper .bPl-single-token-field-wrapper .bPl-single-token-field .bPl-arrow-icon:hover {
+  fill: #000;
+}
+.bPl-token-field-main-wrapper .bPl-single-token-field-wrapper .activeField {
+  border-bottom: none;
+  border-radius: 5px 5px 0px 0px;
+  background-image: linear-gradient(#eee 20%, #fff 80%);
+}
+.bPl-token-field-main-wrapper .bPl-single-token-field-wrapper .bPl-token-multiple-filed-wrapper .bPl-token-multiple-filed-wrapper-item {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  border: 1px solid #ccc;
+  padding: 0px 10px;
+  position: relative;
+  height: 30px;
+  overflow: hidden;
+}
+.bPl-token-field-main-wrapper .bPl-single-token-field-wrapper .bPl-token-multiple-filed-wrapper .bPl-token-multiple-filed-wrapper-item:focus {
+  border-color: #146EF5;
+}
+.bPl-token-field-main-wrapper .bPl-single-token-field-wrapper .bPl-token-multiple-filed-wrapper .bPl-token-multiple-filed-wrapper-item .bPl-multiple-search {
+  border: none;
+  outline: none;
+  min-width: 10px;
+}
+.bPl-token-field-main-wrapper .bPl-single-token-field-wrapper .bPl-token-multiple-filed-wrapper .bPl-token-multiple-filed-wrapper-item .bPl-multiple-search:focus {
+  border: none !important;
+  outline: none !important;
+  box-shadow: none;
+}
+.bPl-token-field-main-wrapper .bPl-single-token-field-wrapper .bPl-token-multiple-filed-wrapper .bPl-token-multiple-filed-wrapper-item .bPl-multiple-token-field {
+  width: -moz-fit-content;
+  width: fit-content;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  cursor: pointer;
+  background: linear-gradient(#fff 20%, #f6f6f6 50%, #eee 52%, #f4f4f4 100%);
+  padding: 2px 5px;
+  border-radius: 3px;
+  border: 1px solid #b3b3b3;
+  height: 16px;
+}
+.bPl-token-field-main-wrapper .bPl-single-token-field-wrapper .bPl-token-multiple-filed-wrapper .bPl-token-multiple-filed-wrapper-item .bPl-multiple-token-field .bPl-multiple-token-field-value {
+  color: #252525;
+  font-size: 13px;
+}
+.bPl-token-field-main-wrapper .bPl-single-token-field-wrapper .bPl-token-multiple-filed-wrapper .bPl-token-multiple-filed-wrapper-item .bPl-multiple-token-field .bPl-xMark-icon {
+  fill: #adadad;
+  transition: all 0.2s ease-in-out;
+  display: flex;
+}
+.bPl-token-field-main-wrapper .bPl-single-token-field-wrapper .bPl-token-multiple-filed-wrapper .bPl-token-multiple-filed-wrapper-item .bPl-multiple-token-field .bPl-xMark-icon svg {
+  margin: 0;
+}
+.bPl-token-field-main-wrapper .bPl-single-token-field-wrapper .bPl-token-multiple-filed-wrapper .bPl-token-multiple-filed-wrapper-item .bPl-multiple-token-field .bPl-xMark-icon:hover {
+  fill: #000;
+}
+.bPl-token-field-main-wrapper .bPl-single-token-field-wrapper .bPl-token-multiple-filed-wrapper .bPl-token-multiple-filed-wrapper-item .bPl-empty-token-field {
+  position: absolute;
+  inset: 0;
+  color: #a3a3a3;
+  background: linear-gradient(#eee 1%, #fff 15%);
+  display: flex;
+  align-items: center;
+  padding-left: 10px;
+}
+.bPl-token-field-main-wrapper .bPl-single-token-field-wrapper .bPl-token-multiple-filed-wrapper .focusItem {
+  border-color: #146EF5;
+  box-shadow: 0px 0px 2px #6b59a5;
+}
+/*!*****************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[2].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[2].use[2]!../bpl-tools/Components/SolidBackground/style.css ***!
+  \*****************************************************************************************************************************************************************************************************/
 .panel-custom-color-control-container {
 	border-radius: 5px;
 	width: 250px;
@@ -1604,7 +2041,7 @@
 .bplSortableListItem {
   list-style-type: none;
   color: #fff;
-  background-color: #4527a4;
+  background-color: #146EF5;
   padding: 8px 12px;
   border-radius: 4px;
   margin: 0;
@@ -1642,14 +2079,14 @@
   z-index: 99;
   margin: 0;
   border-radius: 8px;
-  box-shadow: 0 4px 15px 0 rgba(69, 39, 164, 0.5019607843);
+  box-shadow: 0 4px 15px 0 #5495f8;
 }
 .bPlDropdownPopover .bPlTypoFont .bPlTypoFontSelect .bPlTypoFontLists li {
   margin: 0;
   padding: 3px 10px;
 }
 .bPlDropdownPopover .bPlTypoFont .bPlTypoFontSelect .bPlTypoFontLists li:hover {
-  background-color: rgba(69, 39, 164, 0.0588235294);
+  background-color: #85b4fa;
   cursor: pointer;
 }
 .bPlDropdownPopover .bPlTypoFont .bPlTypoFontSelect .dashicon {
@@ -1694,7 +2131,7 @@
 .bPlPanelBody .iconButton,
 .bPlDropdownPopover .components-popover__content .iconButton {
   background: #ffffff;
-  border: 1px solid #4527a4;
+  border: 1px solid #146EF5;
   display: inline-flex;
   align-items: center;
   padding: 0 !important;
@@ -1749,7 +2186,7 @@
   width: max-content;
 }
 .editImageHolder .mediaControl .btnControl button {
-  color: #4527a4;
+  color: #146EF5;
   font-weight: bold;
 }
 .editImageHolder .mediaControl .btnControl button.btnRed {
