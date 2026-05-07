@@ -1,7 +1,7 @@
 <?php
 /**
- * Plugin Name: 3D Fold Out Reveal
- * Description: 3D Fold Out Reveal is a WordPress plugin that allows you to create 3D fold out reveal effects on your website.
+ * Plugin Name: Nice Box
+ * Description:Nice Box is a WordPress plugin that allows you to create nice box effects on your website.
  * Version: 1.0.0
  * Author: bPlugins
  * Author URI: https://bplugins.com

@@ -508,14 +508,25 @@ svg.bPlBlockIcon {
 .bPlDropdownPopover .components-popover__content .components-base-control {
   margin-bottom: 0 !important;
 }
+.bPlPanelBody .components-base-control .components-base-control__field .components-toggle-group-control,
+.bPlDropdownPopover .components-popover__content .components-base-control .components-base-control__field .components-toggle-group-control {
+  border-width: 1px !important;
+  border-color: #146EF5 !important;
+}
+.bPlPanelBody .components-base-control .components-base-control__field .components-toggle-group-control::before,
+.bPlDropdownPopover .components-popover__content .components-base-control .components-base-control__field .components-toggle-group-control::before {
+  background: #146EF5;
+}
 .bPlPanelBody .bPlLabel,
 .bPlPanelBody .components-unit-control-wrapper label,
 .bPlPanelBody .components-input-control__label,
 .bPlPanelBody .components-number-control label,
+.bPlPanelBody .components-form-token-field__label,
 .bPlDropdownPopover .components-popover__content .bPlLabel,
 .bPlDropdownPopover .components-popover__content .components-unit-control-wrapper label,
 .bPlDropdownPopover .components-popover__content .components-input-control__label,
-.bPlDropdownPopover .components-popover__content .components-number-control label {
+.bPlDropdownPopover .components-popover__content .components-number-control label,
+.bPlDropdownPopover .components-popover__content .components-form-token-field__label {
   display: flex !important;
   align-items: center;
   gap: 6px;
@@ -527,11 +538,17 @@ svg.bPlBlockIcon {
 .bPlPanelBody .components-unit-control-wrapper label .labelPro,
 .bPlPanelBody .components-input-control__label .labelPro,
 .bPlPanelBody .components-number-control label .labelPro,
+.bPlPanelBody .components-form-token-field__label .labelPro,
 .bPlDropdownPopover .components-popover__content .bPlLabel .labelPro,
 .bPlDropdownPopover .components-popover__content .components-unit-control-wrapper label .labelPro,
 .bPlDropdownPopover .components-popover__content .components-input-control__label .labelPro,
-.bPlDropdownPopover .components-popover__content .components-number-control label .labelPro {
+.bPlDropdownPopover .components-popover__content .components-number-control label .labelPro,
+.bPlDropdownPopover .components-popover__content .components-form-token-field__label .labelPro {
   margin-left: auto;
+}
+.bPlPanelBody .components-form-token-field__label,
+.bPlDropdownPopover .components-popover__content .components-form-token-field__label {
+  margin-bottom: 8px !important;
 }
 .bPlPanelBody .bPlResetVal,
 .bPlDropdownPopover .components-popover__content .bPlResetVal {
@@ -723,14 +740,36 @@ svg.bPlBlockIcon {
   justify-content: center;
 }
 
-.bPlPanelBody .components-base-control .components-base-control__field .components-toggle-group-control {
-  border-width: 1px !important;
-  border-color: #146EF5 !important;
+.bPlPanelBody {
+  margin-top: 0 !important;
 }
-.bPlPanelBody .components-base-control .components-base-control__field .components-toggle-group-control::before {
-  background: #146EF5;
+.bPlPanelBody .components-panel__body-title {
+  transition: color 0.3s ease-in-out, background 0.3s ease-in-out;
 }
-
+.bPlPanelBody .components-panel__body-title:hover {
+  color: #146EF5;
+  background: rgba(20, 110, 245, 0.1);
+}
+.bPlPanelBody .components-panel__body-title button {
+  color: inherit;
+}
+.bPlPanelBody .components-panel__body-title button:focus, .bPlPanelBody .components-panel__body-title button:hover, .bPlPanelBody .components-panel__body-title button:active {
+  color: inherit;
+  border: none;
+  outline: 0;
+  box-shadow: none;
+}
+.bPlPanelBody.is-opened {
+  border: 1px solid #146EF5;
+}
+.bPlPanelBody.is-opened .components-panel__body-title {
+  color: #146EF5;
+  background: rgba(20, 110, 245, 0.15);
+  border-bottom: 1px solid rgba(20, 110, 245, 0.5);
+}
+.bPlPanelBody.is-opened .components-panel__body-title:hover {
+  background: rgba(20, 110, 245, 0.1);
+}
 .bPlPanelBody .flex1 {
   flex: 1;
 }
@@ -2047,6 +2086,9 @@ svg.bPlBlockIcon {
   margin: 0;
   box-sizing: border-box;
   cursor: grab;
+}
+.bplSortableListItem.hide {
+  opacity: 0.5;
 }
 /*!*************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[4].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[4].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[4].use[3]!../bpl-tools/Components/Typography/Typography.scss ***!
