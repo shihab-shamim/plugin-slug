@@ -3,13 +3,16 @@
 	"apiVersion": 3,
 	"name": "icb/fold-out-reveal",
 	"version": "1.0.0",
-	"title": "3D Fold Out Reveal",
+	"title": "Live Chats",
 	"category": "widgets",
-	"description": "3D Fold Out Reveal is a WordPress plugin that allows you to create 3D fold out reveal effects on your website.",
+	"description": "Live Chats is a WordPress plugin that allows you to add interactive live chat widgets to your website.",
 	"keywords": [
-		"3D Fold Out Reveal","fold","reveal","cards"
+		"Live Chats",
+		"live chat",
+		"chat",
+		"support"
 	],
-	"textdomain": "info-cards",
+	"textdomain": "live-chats",
 	"attributes": {
 		"alignment": {
 			"type": "string",

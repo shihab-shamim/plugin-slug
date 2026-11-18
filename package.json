@@ -1,7 +1,7 @@
 {
-	"name": "plugin-slug",
+	"name": "live-chats",
 	"version": "0.1.0",
-	"description": "Example block scaffolded with Create Block tool.",
+	"description": "Live Chats is a WordPress plugin that allows you to add interactive live chat widgets to your website.",
 	"author": "The WordPress Contributors",
 	"license": "GPL-2.0-or-later",
 	"main": "build/index.js",
@@ -13,7 +13,7 @@
 		"format": "wp-scripts format",
 		"start": "wp-scripts start --webpack-copy-php",
 		"build": "wp-scripts build --webpack-copy-php",
-		"i18n-pot": "wp i18n make-pot . languages/b-blocks.pot --exclude=\"src\" && cp ./languages/b-blocks.pot ./languages/b-blocks-en_US.po",
+		"i18n-pot": "wp i18n make-pot . languages/live-chats.pot --exclude=\"src\" && cp ./languages/live-chats.pot ./languages/live-chats-en_US.po",
 		"i18n-json": "wp i18n make-json languages/ --no-purge",
 		"i18n-mo": "wp i18n make-mo languages/",
 		"i18n": "npm run i18n-pot && npm run i18n-json && npm run i18n-mo",
